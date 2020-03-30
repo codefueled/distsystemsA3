@@ -1,0 +1,253 @@
+2020-02-23 15:40:24,050 [myid:] - INFO  [main:QuorumPeerConfig@135] - Reading configuration from: C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\conf\zoo.cfg
+2020-02-23 15:40:24,055 [myid:] - WARN  [main:VerifyingFileFactory@59] - \tmp\zookeeper is relative. Prepend .\ to indicate that you're sure!
+2020-02-23 15:40:24,065 [myid:] - INFO  [main:QuorumPeerConfig@387] - clientPortAddress is 0.0.0.0:2181
+2020-02-23 15:40:24,066 [myid:] - INFO  [main:QuorumPeerConfig@391] - secureClientPort is not set
+2020-02-23 15:40:24,068 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2020-02-23 15:40:24,068 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2020-02-23 15:40:24,068 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2020-02-23 15:40:24,068 [myid:] - WARN  [main:QuorumPeerMain@125] - Either no config or no quorum defined in config, running  in standalone mode
+2020-02-23 15:40:24,069 [myid:] - INFO  [main:ManagedUtil@46] - Log4j found with jmx enabled.
+2020-02-23 15:40:24,099 [myid:] - INFO  [main:QuorumPeerConfig@135] - Reading configuration from: C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\conf\zoo.cfg
+2020-02-23 15:40:24,099 [myid:] - WARN  [main:VerifyingFileFactory@59] - \tmp\zookeeper is relative. Prepend .\ to indicate that you're sure!
+2020-02-23 15:40:24,099 [myid:] - INFO  [main:QuorumPeerConfig@387] - clientPortAddress is 0.0.0.0:2181
+2020-02-23 15:40:24,099 [myid:] - INFO  [main:QuorumPeerConfig@391] - secureClientPort is not set
+2020-02-23 15:40:24,099 [myid:] - INFO  [main:ZooKeeperServerMain@117] - Starting server
+2020-02-23 15:40:24,102 [myid:] - INFO  [main:FileTxnSnapLog@115] - zookeeper.snapshot.trust.empty : false
+2020-02-23 15:40:24,113 [myid:] - INFO  [main:Environment@109] - Server environment:zookeeper.version=3.5.7-f0fdd52973d373ffd9c86b81d99842dc2c7f660e, built on 02/10/2020 11:30 GMT
+2020-02-23 15:40:24,114 [myid:] - INFO  [main:Environment@109] - Server environment:host.name=10.66.159.54
+2020-02-23 15:40:24,114 [myid:] - INFO  [main:Environment@109] - Server environment:java.version=1.8.0_201
+2020-02-23 15:40:24,114 [myid:] - INFO  [main:Environment@109] - Server environment:java.vendor=Oracle Corporation
+2020-02-23 15:40:24,114 [myid:] - INFO  [main:Environment@109] - Server environment:java.home=C:\Program Files\Java\jre1.8.0_201
+2020-02-23 15:40:24,114 [myid:] - INFO  [main:Environment@109] - Server environment:java.class.path=C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\zookeeper-server\target\classes;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\build\classes;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\zookeeper-server\target\lib\*.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\build\lib\*.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\zookeeper-jute-3.5.7.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\zookeeper-3.5.7.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\slf4j-log4j12-1.7.25.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\slf4j-api-1.7.25.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\netty-transport-native-unix-common-4.1.45.Final.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\netty-transport-native-epoll-4.1.45.Final.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\netty-transport-4.1.45.Final.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\netty-resolver-4.1.45.Final.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\netty-handler-4.1.45.Final.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\netty-common-4.1.45.Final.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\netty-codec-4.1.45.Final.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\netty-buffer-4.1.45.Final.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\log4j-1.2.17.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\json-simple-1.1.1.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jline-2.11.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jetty-util-9.4.24.v20191120.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jetty-servlet-9.4.24.v20191120.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jetty-server-9.4.24.v20191120.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jetty-security-9.4.24.v20191120.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jetty-io-9.4.24.v20191120.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jetty-http-9.4.24.v20191120.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\javax.servlet-api-3.1.0.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jackson-databind-2.9.10.2.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jackson-core-2.9.10.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\jackson-annotations-2.9.10.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\commons-cli-1.2.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\lib\audience-annotations-0.5.0.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\zookeeper-*.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\zookeeper-server\src\main\resources\lib\*.jar;C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\conf;.
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:java.library.path=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\psych\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\psych\bin;C:\Users\psych\Anaconda3;C:\Users\psych\Anaconda3\Library\mingw-w64\bin;C:\Users\psych\Anaconda3\Library\usr\bin;C:\Users\psych\Anaconda3\Library\bin;C:\Users\psych\Anaconda3\Scripts;C:\Users\psych\Anaconda3\bin;C:\Users\psych\Anaconda3\condabin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\libnvvp;.;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\HashiCorp\Vagrant\bin;C:\Users\psych\Anaconda3;C:\Users\psych\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\psych\AppData\Local\Microsoft\WindowsApps;.;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:java.io.tmpdir=C:\Users\psych\AppData\Local\Temp\
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:java.compiler=<NA>
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:os.name=Windows 10
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:os.arch=amd64
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:os.version=10.0
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:user.name=psych
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:user.home=C:\Users\psych
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:user.dir=C:\Users\psych\Downloads\DistributedSystems\distsystemsA2\apache-zookeeper-3.5.7-bin.tar\apache-zookeeper-3.5.7-bin\apache-zookeeper-3.5.7-bin\bin
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:os.memory.free=233MB
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:os.memory.max=889MB
+2020-02-23 15:40:24,115 [myid:] - INFO  [main:Environment@109] - Server environment:os.memory.total=245MB
+2020-02-23 15:40:24,116 [myid:] - INFO  [main:ZooKeeperServer@938] - minSessionTimeout set to 4000
+2020-02-23 15:40:24,116 [myid:] - INFO  [main:ZooKeeperServer@947] - maxSessionTimeout set to 40000
+2020-02-23 15:40:24,116 [myid:] - INFO  [main:ZooKeeperServer@166] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir \tmp\zookeeper\version-2 snapdir \tmp\zookeeper\version-2
+2020-02-23 15:40:24,128 [myid:] - INFO  [main:Log@169] - Logging initialized @1146ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-02-23 15:40:24,200 [myid:] - WARN  [main:ContextHandler@1520] - o.e.j.s.ServletContextHandler@4b952a2d{/,null,UNAVAILABLE} contextPath ends with /*
+2020-02-23 15:40:24,201 [myid:] - WARN  [main:ContextHandler@1531] - Empty contextPath
+2020-02-23 15:40:24,212 [myid:] - INFO  [main:Server@359] - jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 1.8.0_201-b09
+2020-02-23 15:40:24,252 [myid:] - INFO  [main:DefaultSessionIdManager@333] - DefaultSessionIdManager workerName=node0
+2020-02-23 15:40:24,252 [myid:] - INFO  [main:DefaultSessionIdManager@338] - No SessionScavenger set, using defaults
+2020-02-23 15:40:24,253 [myid:] - INFO  [main:HouseKeeper@140] - node0 Scavenging every 660000ms
+2020-02-23 15:40:24,261 [myid:] - INFO  [main:ContextHandler@825] - Started o.e.j.s.ServletContextHandler@4b952a2d{/,null,AVAILABLE}
+2020-02-23 15:40:24,281 [myid:] - INFO  [main:AbstractConnector@330] - Started ServerConnector@51081592{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2020-02-23 15:40:24,281 [myid:] - INFO  [main:Server@399] - Started @1298ms
+2020-02-23 15:40:24,281 [myid:] - INFO  [main:JettyAdminServer@112] - Started AdminServer on address 0.0.0.0, port 8080 and command URL /commands
+2020-02-23 15:40:24,285 [myid:] - INFO  [main:ServerCnxnFactory@135] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2020-02-23 15:40:24,287 [myid:] - INFO  [main:NIOServerCnxnFactory@673] - Configuring NIO connection handler with 10s sessionless connection timeout, 2 selector thread(s), 24 worker threads, and 64 kB direct buffers.
+2020-02-23 15:40:24,289 [myid:] - INFO  [main:NIOServerCnxnFactory@686] - binding to port 0.0.0.0/0.0.0.0:2181
+2020-02-23 15:40:24,297 [myid:] - INFO  [main:ZKDatabase@117] - zookeeper.snapshotSizeFactor = 0.33
+2020-02-23 15:40:24,300 [myid:] - INFO  [main:FileTxnSnapLog@404] - Snapshotting: 0x0 to \tmp\zookeeper\version-2\snapshot.0
+2020-02-23 15:40:24,305 [myid:] - INFO  [main:FileTxnSnapLog@404] - Snapshotting: 0x0 to \tmp\zookeeper\version-2\snapshot.0
+2020-02-23 15:40:24,315 [myid:] - INFO  [main:ContainerManager@64] - Using checkIntervalMs=60000 maxPerMinute=10000
+2020-02-23 15:40:47,608 [myid:] - INFO  [SyncThread:0:FileTxnLog@218] - Creating new log file: log.1
+2020-02-23 15:43:52,262 [myid:] - WARN  [NIOWorkerThread-17:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0001: An existing connection was forcibly closed by the remote host
+2020-02-23 15:44:04,058 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0001, timeout of 10000ms exceeded
+2020-02-23 19:29:02,247 [myid:] - WARN  [NIOWorkerThread-8:NIOServerCnxn@366] - Unable to read additional data from client sessionid 0x10022e3bc6a0000, likely client has closed socket
+2020-02-23 19:29:02,403 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0000, timeout of 30000ms exceeded
+2020-02-23 19:29:12,069 [myid:] - INFO  [NIOWorkerThread-9:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0000 for client /127.0.0.1:64368, probably expired
+2020-02-25 12:06:06,916 [myid:] - WARN  [NIOWorkerThread-13:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0002: An existing connection was forcibly closed by the remote host
+2020-02-25 12:06:18,799 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0002, timeout of 10000ms exceeded
+2020-02-25 21:06:06,393 [myid:] - WARN  [NIOWorkerThread-20:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0003: An existing connection was forcibly closed by the remote host
+2020-02-25 21:06:14,524 [myid:] - WARN  [NIOWorkerThread-1:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0004: An existing connection was forcibly closed by the remote host
+2020-02-25 21:06:16,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0003, timeout of 10000ms exceeded
+2020-02-25 21:06:24,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0004, timeout of 10000ms exceeded
+2020-02-25 21:14:54,728 [myid:] - WARN  [NIOWorkerThread-22:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0005: An existing connection was forcibly closed by the remote host
+2020-02-25 21:15:06,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0005, timeout of 10000ms exceeded
+2020-02-25 21:16:11,250 [myid:] - WARN  [NIOWorkerThread-5:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0006: An existing connection was forcibly closed by the remote host
+2020-02-25 21:16:22,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0006, timeout of 10000ms exceeded
+2020-02-25 21:19:14,870 [myid:] - WARN  [NIOWorkerThread-10:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0007: An existing connection was forcibly closed by the remote host
+2020-02-25 21:19:26,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0007, timeout of 10000ms exceeded
+2020-02-25 21:19:35,948 [myid:] - WARN  [NIOWorkerThread-23:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0008: An existing connection was forcibly closed by the remote host
+2020-02-25 21:19:46,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0008, timeout of 10000ms exceeded
+2020-02-25 21:23:15,197 [myid:] - WARN  [NIOWorkerThread-6:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a000a: An existing connection was forcibly closed by the remote host
+2020-02-25 21:23:26,641 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a000a, timeout of 10000ms exceeded
+2020-02-25 21:31:47,335 [myid:] - WARN  [NIOWorkerThread-5:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a000b: An existing connection was forcibly closed by the remote host
+2020-02-25 21:31:58,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a000b, timeout of 10000ms exceeded
+2020-02-25 21:33:13,729 [myid:] - WARN  [NIOWorkerThread-18:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a000c: An existing connection was forcibly closed by the remote host
+2020-02-25 21:33:24,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a000c, timeout of 10000ms exceeded
+2020-02-25 21:34:12,379 [myid:] - WARN  [NIOWorkerThread-9:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0009: An existing connection was forcibly closed by the remote host
+2020-02-25 21:34:20,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0009, timeout of 10000ms exceeded
+2020-02-25 21:35:52,774 [myid:] - WARN  [NIOWorkerThread-22:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a000e: An existing connection was forcibly closed by the remote host
+2020-02-25 21:36:04,641 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a000e, timeout of 10000ms exceeded
+2020-02-25 21:36:08,070 [myid:] - WARN  [NIOWorkerThread-15:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a000f: An existing connection was forcibly closed by the remote host
+2020-02-25 21:36:18,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a000f, timeout of 10000ms exceeded
+2020-02-25 21:38:35,163 [myid:] - WARN  [NIOWorkerThread-10:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0010: An existing connection was forcibly closed by the remote host
+2020-02-25 21:38:46,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0010, timeout of 10000ms exceeded
+2020-02-25 21:40:01,486 [myid:] - WARN  [NIOWorkerThread-3:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0011: An existing connection was forcibly closed by the remote host
+2020-02-25 21:40:12,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0011, timeout of 10000ms exceeded
+2020-02-25 21:40:42,614 [myid:] - WARN  [NIOWorkerThread-14:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0012: An existing connection was forcibly closed by the remote host
+2020-02-25 21:40:52,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0012, timeout of 10000ms exceeded
+2020-02-25 21:43:34,619 [myid:] - WARN  [NIOWorkerThread-13:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0013: An existing connection was forcibly closed by the remote host
+2020-02-25 21:43:44,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0013, timeout of 10000ms exceeded
+2020-02-25 21:44:27,181 [myid:] - WARN  [NIOWorkerThread-8:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0014: An existing connection was forcibly closed by the remote host
+2020-02-25 21:44:38,642 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0014, timeout of 10000ms exceeded
+2020-02-25 21:45:41,506 [myid:] - WARN  [NIOWorkerThread-1:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0016: An existing connection was forcibly closed by the remote host
+2020-02-25 21:45:52,643 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0016, timeout of 10000ms exceeded
+2020-02-25 21:46:43,735 [myid:] - WARN  [NIOWorkerThread-8:NIOServerCnxn@370] - Exception causing close of session 0x10022e3bc6a0015: An existing connection was forcibly closed by the remote host
+2020-02-25 21:46:52,641 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0015, timeout of 10000ms exceeded
+2020-02-26 00:29:30,512 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0017, timeout of 10000ms exceeded
+2020-02-26 00:29:30,513 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0018, timeout of 10000ms exceeded
+2020-02-26 00:29:30,519 [myid:] - INFO  [NIOWorkerThread-13:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0017 for client /127.0.0.1:60321, probably expired
+2020-02-26 00:29:31,530 [myid:] - INFO  [NIOWorkerThread-6:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0018 for client /127.0.0.1:60331, probably expired
+2020-02-26 03:29:39,193 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0019, timeout of 10000ms exceeded
+2020-02-26 03:29:40,217 [myid:] - INFO  [NIOWorkerThread-4:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0019 for client /127.0.0.1:60436, probably expired
+2020-02-26 13:25:54,340 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a000d, timeout of 10000ms exceeded
+2020-02-26 13:25:54,341 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a001a, timeout of 10000ms exceeded
+2020-02-26 13:25:54,598 [myid:] - INFO  [NIOWorkerThread-12:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a001a for client /127.0.0.1:60536, probably expired
+2020-02-26 13:25:55,663 [myid:] - INFO  [NIOWorkerThread-4:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a000d for client /127.0.0.1:60592, probably expired
+2020-02-26 18:00:31,100 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a001d, timeout of 10000ms exceeded
+2020-02-26 18:00:31,258 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a001c, timeout of 10000ms exceeded
+2020-02-26 18:00:31,258 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a001b, timeout of 10000ms exceeded
+2020-02-26 18:00:31,301 [myid:] - INFO  [NIOWorkerThread-7:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a001c for client /127.0.0.1:50990, probably expired
+2020-02-26 18:00:31,302 [myid:] - INFO  [NIOWorkerThread-8:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a001d for client /127.0.0.1:50989, probably expired
+2020-02-26 18:00:32,311 [myid:] - INFO  [NIOWorkerThread-12:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a001b for client /127.0.0.1:51031, probably expired
+2020-02-26 19:31:55,482 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0020, timeout of 10000ms exceeded
+2020-02-26 19:31:55,483 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a001e, timeout of 10000ms exceeded
+2020-02-26 19:31:55,483 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a001f, timeout of 10000ms exceeded
+2020-02-26 19:31:55,498 [myid:] - INFO  [NIOWorkerThread-1:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a001e for client /127.0.0.1:52988, probably expired
+2020-02-26 19:31:56,501 [myid:] - INFO  [NIOWorkerThread-3:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0020 for client /127.0.0.1:52989, probably expired
+2020-02-26 19:31:56,504 [myid:] - INFO  [NIOWorkerThread-5:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a001f for client /127.0.0.1:52991, probably expired
+2020-02-26 21:14:25,685 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0021, timeout of 10000ms exceeded
+2020-02-26 21:14:25,690 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0023, timeout of 10000ms exceeded
+2020-02-26 21:14:25,690 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0022, timeout of 10000ms exceeded
+2020-02-26 21:14:26,322 [myid:] - INFO  [NIOWorkerThread-8:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0023 for client /127.0.0.1:55479, probably expired
+2020-02-26 21:14:26,330 [myid:] - INFO  [NIOWorkerThread-11:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0021 for client /127.0.0.1:55480, probably expired
+2020-02-26 21:14:27,346 [myid:] - INFO  [NIOWorkerThread-14:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0022 for client /127.0.0.1:55503, probably expired
+2020-02-27 00:08:29,083 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0024, timeout of 10000ms exceeded
+2020-02-27 00:08:29,086 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0025, timeout of 10000ms exceeded
+2020-02-27 00:08:29,087 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0026, timeout of 10000ms exceeded
+2020-02-27 00:08:29,358 [myid:] - INFO  [NIOWorkerThread-8:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0024 for client /127.0.0.1:56229, probably expired
+2020-02-27 00:08:29,381 [myid:] - INFO  [NIOWorkerThread-13:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0026 for client /127.0.0.1:56231, probably expired
+2020-02-27 00:08:29,381 [myid:] - INFO  [NIOWorkerThread-15:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0025 for client /127.0.0.1:56232, probably expired
+2020-02-27 03:08:53,543 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0028, timeout of 10000ms exceeded
+2020-02-27 03:08:54,563 [myid:] - INFO  [NIOWorkerThread-17:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0028 for client /127.0.0.1:56377, probably expired
+2020-02-27 08:47:53,427 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a002a, timeout of 10000ms exceeded
+2020-02-27 08:47:53,428 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0027, timeout of 10000ms exceeded
+2020-02-27 08:47:53,454 [myid:] - INFO  [NIOWorkerThread-20:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a002a for client /127.0.0.1:56469, probably expired
+2020-02-27 08:47:53,463 [myid:] - INFO  [NIOWorkerThread-21:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0027 for client /127.0.0.1:56468, probably expired
+2020-02-27 08:59:15,855 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0029, timeout of 10000ms exceeded
+2020-02-27 08:59:15,855 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a002b, timeout of 10000ms exceeded
+2020-02-27 08:59:16,228 [myid:] - INFO  [NIOWorkerThread-6:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a002b for client /127.0.0.1:57642, probably expired
+2020-02-27 08:59:16,246 [myid:] - INFO  [NIOWorkerThread-9:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0029 for client /127.0.0.1:57643, probably expired
+2020-02-27 09:36:18,264 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a002d, timeout of 10000ms exceeded
+2020-02-27 09:36:18,265 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a002c, timeout of 10000ms exceeded
+2020-02-27 09:36:19,843 [myid:] - WARN  [SyncThread:0:FileTxnLog@343] - fsync-ing the write ahead log in SyncThread:0 took 1566ms which will adversely effect operation latency. File size is 67108880 bytes. See the ZooKeeper troubleshooting guide
+2020-02-27 09:36:19,900 [myid:] - INFO  [NIOWorkerThread-24:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a002d for client /127.0.0.1:58253, probably expired
+2020-02-27 09:36:21,115 [myid:] - INFO  [NIOWorkerThread-3:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a002c for client /127.0.0.1:58260, probably expired
+2020-02-27 11:20:12,934 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a002e, timeout of 10000ms exceeded
+2020-02-27 11:20:12,934 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0030, timeout of 10000ms exceeded
+2020-02-27 11:20:13,948 [myid:] - INFO  [NIOWorkerThread-16:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0030 for client /127.0.0.1:59808, probably expired
+2020-02-27 11:20:13,952 [myid:] - INFO  [NIOWorkerThread-19:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a002e for client /127.0.0.1:59810, probably expired
+2020-02-27 13:10:00,337 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0031, timeout of 10000ms exceeded
+2020-02-27 13:10:00,337 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a002f, timeout of 10000ms exceeded
+2020-02-27 13:10:01,367 [myid:] - INFO  [NIOWorkerThread-5:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0031 for client /127.0.0.1:65075, probably expired
+2020-02-27 13:10:01,367 [myid:] - INFO  [NIOWorkerThread-6:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a002f for client /127.0.0.1:65076, probably expired
+2020-02-27 14:32:28,159 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0033, timeout of 10000ms exceeded
+2020-02-27 14:32:28,361 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0032, timeout of 10000ms exceeded
+2020-02-27 14:32:30,182 [myid:] - INFO  [NIOWorkerThread-19:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0033 for client /127.0.0.1:50602, probably expired
+2020-02-27 14:32:30,186 [myid:] - INFO  [NIOWorkerThread-22:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0032 for client /127.0.0.1:50604, probably expired
+2020-02-27 16:13:36,090 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0035, timeout of 10000ms exceeded
+2020-02-27 16:13:36,090 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0034, timeout of 10000ms exceeded
+2020-02-27 16:13:36,090 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0036, timeout of 10000ms exceeded
+2020-02-27 16:13:36,273 [myid:] - INFO  [NIOWorkerThread-6:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0035 for client /127.0.0.1:50874, probably expired
+2020-02-27 16:13:36,279 [myid:] - INFO  [NIOWorkerThread-10:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0036 for client /127.0.0.1:50875, probably expired
+2020-02-27 16:13:37,288 [myid:] - INFO  [NIOWorkerThread-11:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0034 for client /127.0.0.1:50883, probably expired
+2020-02-27 19:45:44,289 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0037, timeout of 10000ms exceeded
+2020-02-27 19:45:45,305 [myid:] - INFO  [NIOWorkerThread-12:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0037 for client /127.0.0.1:52229, probably expired
+2020-02-28 13:44:39,939 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0039, timeout of 10000ms exceeded
+2020-02-28 13:44:39,940 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a003a, timeout of 10000ms exceeded
+2020-02-28 13:44:40,358 [myid:] - INFO  [NIOWorkerThread-12:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a003a for client /127.0.0.1:52352, probably expired
+2020-02-28 13:44:40,359 [myid:] - INFO  [NIOWorkerThread-14:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0039 for client /127.0.0.1:52351, probably expired
+2020-02-28 18:11:00,469 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a003b, timeout of 10000ms exceeded
+2020-02-28 18:11:00,472 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0038, timeout of 10000ms exceeded
+2020-02-28 18:11:00,485 [myid:] - INFO  [NIOWorkerThread-13:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a003b for client /127.0.0.1:59005, probably expired
+2020-02-28 18:11:01,512 [myid:] - INFO  [NIOWorkerThread-15:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0038 for client /127.0.0.1:59011, probably expired
+2020-02-28 22:16:49,829 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a003d, timeout of 10000ms exceeded
+2020-02-28 22:16:49,830 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a003c, timeout of 10000ms exceeded
+2020-02-28 22:16:49,830 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a003e, timeout of 10000ms exceeded
+2020-02-28 22:16:50,517 [myid:] - INFO  [NIOWorkerThread-22:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a003d for client /127.0.0.1:61330, probably expired
+2020-02-28 22:16:51,525 [myid:] - INFO  [NIOWorkerThread-24:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a003c for client /127.0.0.1:61338, probably expired
+2020-02-28 22:16:51,535 [myid:] - INFO  [NIOWorkerThread-3:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a003e for client /127.0.0.1:61340, probably expired
+2020-02-29 14:34:56,244 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a003f, timeout of 10000ms exceeded
+2020-02-29 14:34:56,245 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0040, timeout of 10000ms exceeded
+2020-02-29 14:34:56,245 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0041, timeout of 10000ms exceeded
+2020-02-29 14:34:56,340 [myid:] - INFO  [NIOWorkerThread-24:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0040 for client /127.0.0.1:61482, probably expired
+2020-02-29 14:34:56,343 [myid:] - INFO  [NIOWorkerThread-1:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0041 for client /127.0.0.1:61483, probably expired
+2020-02-29 14:34:56,426 [myid:] - INFO  [NIOWorkerThread-3:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a003f for client /127.0.0.1:61484, probably expired
+2020-02-29 17:15:39,544 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0044, timeout of 10000ms exceeded
+2020-02-29 17:15:39,544 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0043, timeout of 10000ms exceeded
+2020-02-29 17:15:39,544 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0042, timeout of 10000ms exceeded
+2020-02-29 17:15:40,249 [myid:] - INFO  [NIOWorkerThread-13:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0042 for client /127.0.0.1:62295, probably expired
+2020-02-29 17:15:41,245 [myid:] - INFO  [NIOWorkerThread-18:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0044 for client /127.0.0.1:62297, probably expired
+2020-02-29 17:15:41,255 [myid:] - INFO  [NIOWorkerThread-19:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0043 for client /127.0.0.1:62298, probably expired
+2020-02-29 21:00:39,933 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0046, timeout of 10000ms exceeded
+2020-02-29 21:00:39,933 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0045, timeout of 10000ms exceeded
+2020-02-29 21:00:39,942 [myid:] - INFO  [NIOWorkerThread-6:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0046 for client /127.0.0.1:64320, probably expired
+2020-02-29 21:00:39,942 [myid:] - INFO  [NIOWorkerThread-4:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0045 for client /127.0.0.1:64319, probably expired
+2020-03-08 21:16:01,519 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0049, timeout of 10000ms exceeded
+2020-03-08 21:16:01,519 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0047, timeout of 10000ms exceeded
+2020-03-08 21:16:01,528 [myid:] - INFO  [NIOWorkerThread-11:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0049 for client /127.0.0.1:64475, probably expired
+2020-03-08 21:16:01,538 [myid:] - INFO  [NIOWorkerThread-12:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0047 for client /127.0.0.1:64476, probably expired
+2020-03-09 00:02:30,053 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0048, timeout of 10000ms exceeded
+2020-03-09 00:02:30,064 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a004a, timeout of 10000ms exceeded
+2020-03-09 00:02:31,103 [myid:] - INFO  [NIOWorkerThread-13:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a004a for client /127.0.0.1:55004, probably expired
+2020-03-09 00:02:31,103 [myid:] - INFO  [NIOWorkerThread-14:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0048 for client /127.0.0.1:55005, probably expired
+2020-03-09 03:04:53,380 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a004d, timeout of 10000ms exceeded
+2020-03-09 03:04:54,399 [myid:] - INFO  [NIOWorkerThread-4:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a004d for client /127.0.0.1:55310, probably expired
+2020-03-09 12:31:03,524 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a004b, timeout of 10000ms exceeded
+2020-03-09 12:31:03,524 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a004c, timeout of 10000ms exceeded
+2020-03-09 12:31:03,568 [myid:] - INFO  [NIOWorkerThread-6:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a004b for client /127.0.0.1:55393, probably expired
+2020-03-09 12:31:04,586 [myid:] - INFO  [NIOWorkerThread-4:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a004c for client /127.0.0.1:55395, probably expired
+2020-03-09 14:42:21,161 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a004e, timeout of 10000ms exceeded
+2020-03-09 14:42:21,337 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0050, timeout of 10000ms exceeded
+2020-03-09 14:42:22,618 [myid:] - INFO  [NIOWorkerThread-13:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a004e for client /127.0.0.1:60370, probably expired
+2020-03-09 14:42:24,239 [myid:] - INFO  [NIOWorkerThread-19:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0050 for client /127.0.0.1:60376, probably expired
+2020-03-09 18:21:13,765 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0052, timeout of 10000ms exceeded
+2020-03-09 18:21:13,765 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a004f, timeout of 10000ms exceeded
+2020-03-09 18:21:13,775 [myid:] - INFO  [NIOWorkerThread-1:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0052 for client /127.0.0.1:62275, probably expired
+2020-03-09 18:21:19,791 [myid:] - INFO  [NIOWorkerThread-14:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a004f for client /127.0.0.1:62291, probably expired
+2020-03-09 19:26:19,005 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0053, timeout of 10000ms exceeded
+2020-03-09 19:26:19,007 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0054, timeout of 10000ms exceeded
+2020-03-09 19:26:19,008 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0051, timeout of 10000ms exceeded
+2020-03-09 19:26:20,261 [myid:] - INFO  [NIOWorkerThread-14:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0053 for client /127.0.0.1:64760, probably expired
+2020-03-09 19:26:20,268 [myid:] - INFO  [NIOWorkerThread-1:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0054 for client /127.0.0.1:64762, probably expired
+2020-03-09 19:26:20,281 [myid:] - INFO  [NIOWorkerThread-3:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0051 for client /127.0.0.1:64763, probably expired
+2020-03-09 22:34:43,529 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0056, timeout of 10000ms exceeded
+2020-03-09 22:34:43,529 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0055, timeout of 10000ms exceeded
+2020-03-09 22:34:43,529 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0057, timeout of 10000ms exceeded
+2020-03-09 22:34:44,374 [myid:] - INFO  [NIOWorkerThread-11:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0057 for client /127.0.0.1:65283, probably expired
+2020-03-09 22:34:44,374 [myid:] - INFO  [NIOWorkerThread-12:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0055 for client /127.0.0.1:65282, probably expired
+2020-03-09 22:34:45,402 [myid:] - INFO  [NIOWorkerThread-17:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0056 for client /127.0.0.1:65290, probably expired
+2020-03-10 13:30:30,465 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0059, timeout of 10000ms exceeded
+2020-03-10 13:30:30,495 [myid:] - INFO  [NIOWorkerThread-6:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0059 for client /127.0.0.1:65487, probably expired
+2020-03-10 20:47:27,619 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0058, timeout of 10000ms exceeded
+2020-03-10 20:47:27,626 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a005b, timeout of 10000ms exceeded
+2020-03-10 20:47:28,663 [myid:] - INFO  [NIOWorkerThread-6:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a005b for client /127.0.0.1:59108, probably expired
+2020-03-10 20:47:28,674 [myid:] - INFO  [NIOWorkerThread-10:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0058 for client /127.0.0.1:59110, probably expired
+2020-03-10 23:47:29,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a005d, timeout of 10000ms exceeded
+2020-03-10 23:47:29,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a005c, timeout of 10000ms exceeded
+2020-03-10 23:47:29,166 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a005a, timeout of 10000ms exceeded
+2020-03-10 23:47:29,329 [myid:] - INFO  [NIOWorkerThread-19:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a005d for client /127.0.0.1:59152, probably expired
+2020-03-10 23:47:30,262 [myid:] - INFO  [NIOWorkerThread-24:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a005a for client /127.0.0.1:59163, probably expired
+2020-03-10 23:47:30,265 [myid:] - INFO  [NIOWorkerThread-23:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a005c for client /127.0.0.1:59165, probably expired
+2020-03-10 23:50:30,060 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0060, timeout of 10000ms exceeded
+2020-03-10 23:50:30,061 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a005f, timeout of 10000ms exceeded
+2020-03-10 23:50:30,061 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a005e, timeout of 10000ms exceeded
+2020-03-10 23:50:30,285 [myid:] - INFO  [NIOWorkerThread-14:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0060 for client /127.0.0.1:59182, probably expired
+2020-03-10 23:50:31,371 [myid:] - INFO  [NIOWorkerThread-8:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a005e for client /127.0.0.1:59196, probably expired
+2020-03-10 23:50:31,372 [myid:] - INFO  [NIOWorkerThread-16:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a005f for client /127.0.0.1:59198, probably expired
+2020-03-10 23:56:03,740 [myid:] - INFO  [SessionTracker:ZooKeeperServer@398] - Expiring session 0x10022e3bc6a0062, timeout of 10000ms exceeded
+2020-03-10 23:56:03,744 [myid:] - INFO  [NIOWorkerThread-17:ZooKeeperServer@762] - Invalid session 0x10022e3bc6a0062 for client /127.0.0.1:59665, probably expired
