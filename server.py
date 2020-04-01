@@ -10,9 +10,10 @@ logging.basicConfig()
 
 class Publisher:
     # instantiate variables and connect to broker
-    def __init__(self, ip_add):
+    def __init__(self, ip_add, o_strength):
         self.topic = "Default"
-        #self.full_add = "tcp://" + str(ip_add) + ":1234"
+        self.strength = o_strength
+        self.history = 4
         self.context = zmq.Context()
         self.full_add = ""
         self.sock_pub = self.context.socket(zmq.PUB)
@@ -44,7 +45,7 @@ class Publisher:
 
     # publish the given information for pre-registered topic
     def publish(self, info):
-        # format for published string is "topic||info"
+        # format for published string is "topic||info||strength||history"
         @self.zk_driver.DataWatch(self.home)
         def watch_node(data, stat, event):
             if event is not None and event.type == "CHANGED":
@@ -61,7 +62,7 @@ class Publisher:
                 self.full_add = "tcp://" + str(ip_add) + ":" + ports[0]
                 self.sock_pub.connect(self.full_add)
 
-        msg = str(self.topic) + "||" + str(info)
+        msg = str(self.topic) + "||" + str(info) + "||" + str(self.strength) + "||" + str(self.history)
         self.sock_pub.send_string(msg)
         time.sleep(1)
         return True
@@ -69,7 +70,7 @@ class Publisher:
 
 if __name__ == '__main__':
     # handle input
-    if len(sys.argv) != 3:
+    if len(sys.argv) < 3:
         print("Please provide 2 arguments as specified in the readme")
     elif "||" in sys.argv[1]:
         print("Please re-run and remove any '||' found in the topic name")
@@ -77,9 +78,10 @@ if __name__ == '__main__':
         # process input arguments
         topic = sys.argv[1]
         ip_add = sys.argv[2]
+        strength = sys.argv[3]
 
         # create Publisher object
-        pub = Publisher(ip_add)
+        pub = Publisher(ip_add, strength)
         pub.register_pub(topic)
 
         # wait for inputted information to publish

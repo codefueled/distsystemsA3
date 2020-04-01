@@ -62,6 +62,9 @@ class ZK_Driver:
             self.zk_driver.create(self.pres_znode, ephemeral=True)
         self.zk_driver.set(self.pres_znode, self.president)
 
+        #SET UP WATCH DIRECTORY FOP HISTORY
+        self.history_znode = "/history/his"
+
     def run(self, stop=None):
         if stop:
             while not stop.is_set():
