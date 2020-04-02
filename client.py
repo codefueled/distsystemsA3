@@ -63,6 +63,7 @@ class Subscriber:
                 message = self.sock_sub.recv_string()
                 topic, info, id= message.split("||")
                 msgs = info.split("...")
+                #print("Time received: %.20f" % time.time())  # uncomment for measurements purposes
                 if len(msgs) < self.history:
                     info = "The topics' history size is less than the requested history size, so no messages will be played."
                 else:

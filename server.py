@@ -6,9 +6,9 @@ import sys
 from kazoo.client import KazooClient
 from kazoo.client import KazooState
 import logging
-logging.basicConfig()
 import random
 import string
+logging.basicConfig()
 
 class Publisher:
     # instantiate variables and connect to broker
@@ -55,6 +55,7 @@ class Publisher:
         self.history = self.history + str(info) + "..."
         # format for published string is "topic||info"
         msg = str(self.topic) + "||" + self.history + "||" + str(self.name)
+        #print("Time published: %.20f" % time.time())  # uncomment for measurements purposes
         self.sock_pub.send_string(msg)
 
         @self.zk_driver.DataWatch(self.home)

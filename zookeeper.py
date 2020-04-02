@@ -2,6 +2,7 @@
 #IMPORTS
 from __future__ import unicode_literals
 import zmq
+import time
 from kazoo.client import KazooClient
 import sys
 import logging
@@ -167,6 +168,7 @@ class ZK_Driver:
                             self.strength[topic] = temp
         else:
             message = self.sub_socket.recv_string()
+            #print("Time received: %.20f" % time.time())  # uncomment for measurements purposes
             topic, info, id = message.split("||")
             error_flag = False
 
@@ -214,6 +216,7 @@ class ZK_Driver:
                                 self.pub_history[topic] = temp
                                 topic, info, id = message.split("||")
                                 self.pub_socket.send_string(topic + "||" + "...".join(self.pub_history[topic]) + "||" + id)
+                                #print("Time sent out: %.20f" % time.time())  # uncomment for measurements purposes
                                 break
                             else:
                                 break
