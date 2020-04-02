@@ -42,5 +42,5 @@ Finally, all the unit tests specified in in assignment 2 as well as assignment 1
 
 # Measurements
 
-All raw measurements of this system's performance are available in the excel document measurements.xlsx, and they are summarized and analyzed in Measurements.docx.
+All raw measurements of this system's performance are available in the excel document measurements.xlsx, and they are summarized and analyzed in Measurements.docx. To replicate our measurements, please comment out the specifcied lines in client.py, zookeeper.py, and server.py
 
