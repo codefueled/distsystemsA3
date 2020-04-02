@@ -12,6 +12,7 @@ class ZK_Driver:
     def __init__(self, ip_add):
         context = zmq.Context()
         self.strength = {}
+        self.pub_history = {}
         self.kill = False
         self.sub_socket = context.socket(zmq.SUB)
         self.pub_socket = context.socket(zmq.PUB)
@@ -131,6 +132,8 @@ class ZK_Driver:
                         msgs = info.split("...")
                         msgs = msgs[0:len(msgs) - 1]
                         print("Received: %s" % topic + "||" + msgs[len(msgs)-1] + "||Pub ID = " + id)
+                        if info not in self.pub_history.keys():
+                            self.pub_history[info] = []
                         # maintain ordered list of publishers per topic
                         if info not in self.strength.keys():
                             self.strength[info] = [id]
@@ -148,7 +151,13 @@ class ZK_Driver:
                         # check if node exists
                         if self.zk_driver.exists('/' + str(topic) + '/' + str(first_val)):
                             if str(first_val) == str(id):
-                                self.pub_socket.send_string(message)
+                                # store history
+                                temp = self.pub_history[topic]
+                                temp.append(msgs[len(msgs) - 1])
+                                self.pub_history[topic] = temp
+                                topic, info, id = message.split("||")
+                                self.pub_socket.send_string(
+                                    topic + "||" + "...".join(self.pub_history[topic]) + "||" + id)
                                 break
                             else:
                                 break
@@ -171,6 +180,9 @@ class ZK_Driver:
                     self.current_topics.append(info)
                     print("Addr ", self.full_add1, end=". ")
                     print("Received: %s" % message)
+
+                    if info not in self.pub_history.keys():
+                        self.pub_history[info] = []
 
                     # maintain ordered list of publishers per topic
                     if info not in self.strength.keys():
@@ -196,7 +208,12 @@ class ZK_Driver:
                         # check if node exists
                         if self.zk_driver.exists('/' + str(topic) + '/' + str(first_val)):
                             if str(first_val) == str(id):
-                                self.pub_socket.send_string(message)
+                                # store history
+                                temp = self.pub_history[topic]
+                                temp.append(msgs[len(msgs) - 1])
+                                self.pub_history[topic] = temp
+                                topic, info, id = message.split("||")
+                                self.pub_socket.send_string(topic + "||" + "...".join(self.pub_history[topic]) + "||" + id)
                                 break
                             else:
                                 break
