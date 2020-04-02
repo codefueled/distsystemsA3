@@ -64,7 +64,7 @@ class Subscriber:
                 topic, info, id= message.split("||")
                 msgs = info.split("...")
                 if len(msgs) < self.history:
-                    info = "The publisher's history size is less than the requested history size, so no messages will be played."
+                    info = "The topics' history size is less than the requested history size, so no messages will be played."
                 else:
                     msgs = msgs[len(msgs) - self.history:len(msgs)]
                     info = ",".join(msgs)
