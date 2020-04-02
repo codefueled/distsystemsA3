@@ -11,10 +11,11 @@ logging.basicConfig()
 class Subscriber:
 
     # instantiate variables and connect to broker
-    def __init__(self, ip_add, port_num, timeout=-1):
+    def __init__(self, ip_add, timeout=-1, history=1):
+        self.history = int(history)
+        self.kill = True
         self.count = 0
         self.full_add = "tcp://" + str(ip_add)
-        self.port = port_num
         self.context = zmq.Context()
         self.sock_sub = self.context.socket(zmq.SUB)
         self.sock_sub.RCVTIMEO = timeout
@@ -25,28 +26,10 @@ class Subscriber:
         self.zk_driver = KazooClient(hosts='127.0.0.1:2181')
         self.zk_driver.start()
 
-        #GET HISTORY IF NEW SUBSCRIBER
-        if self.port:
-            self.history_home = "/history/"
-            self.history_znode = "/history/his"
-            if not self.zk_driver.exists(self.history_znode):
-                self.zk_driver.ensure_path(self.history_home)
-                self.zk_driver.create(self.history_znode, ephemeral=True)
-            self.zk_driver.set(self.history_znode, ip_add + ":" + self.port)
-            self.full_add = "tcp://" + str(ip_add) + ":" + str(self.port)
-            self.sock_sub.connect(self.full_add)
-        else:
-            # WAIT FOR ZOOKEEPER TO BE READY
-            @self.zk_driver.DataWatch(self.home)
-            def watch_node(data, stat, event):
-                if event is None:
-                    data, stat = self.zk_driver.get(self.home)
-                    ports = data.decode('ASCII').split(":")
-                    self.full_add = "tcp://" + str(ip_add) + ":" + ports[1]
-                    self.sock_sub.connect(self.full_add)
-                else:
-                    print("Zookeeper is not ready yet, try again later")
-
+        data, stat = self.zk_driver.get(self.home)
+        ports = data.decode('ASCII').split(":")
+        self.full_add = "tcp://" + str(ip_add) + ":" + ports[1]
+        self.sock_sub.connect(self.full_add)
 
     def register_sub(self, topics):
         topic_list = topics.split(",")
@@ -58,48 +41,36 @@ class Subscriber:
     def notify(self, stop=None):
         if stop:
             while (not stop.is_set()):
-                @self.zk_driver.DataWatch(self.home)
-                def watch_node(data, stat, event):
-                    if event is not None and event.type == "CHANGED":
-                        # DISCONNECT
-                        self.sock_sub.close()
-                        self.context.term()
-                        time.sleep(2)
-                        self.context = zmq.Context()
-                        self.sock_sub = self.context.socket(zmq.SUB)
-
-                        # RECONNECT WITH NEW PORT
-                        data, stat = self.zk_driver.get(self.home)
-                        ports = data.decode('ASCII').split(":")
-                        self.full_add = "tcp://" + str(ip_add) + ":" + ports[1]
-                        self.sock_sub.connect(self.full_add)
-
+                # only used for measurements.py
                 message = self.sock_sub.recv_string()
-                topic, info = message.split("||")
-                print("Topic: %s. Message: %s" % (topic, info))
+                topic, info, id = message.split("||")
                 # print("Time received: %.20f" % time.time())  # uncomment for measurements.py purposes
+                msgs = info.split("...")
+                msgs = msgs[0:len(msgs) - 1]
+                if len(msgs) < self.history:
+                    info = "The publisher's history size is less than the requested history size, so no messages will be played."
+                else:
+                    msgs = msgs[len(msgs) - self.history:len(msgs)]
+                    info = ",".join(msgs)
+                print("Topic: %s. Message: %s" % (topic, info))
                 self.count = self.count + 1
         else:
             while True:
                 @self.zk_driver.DataWatch(self.home)
                 def watch_node(data, stat, event):
-                    if event is not None and event.type == "CHANGED":
-                        # DISCONNECT
-                        self.sock_sub.close()
-                        self.context.term()
-                        time.sleep(2)
-                        self.context = zmq.Context()
-                        self.sock_sub = self.context.socket(zmq.SUB)
-
-                        # RECONNECT WITH NEW PORT
-                        data, stat = self.zk_driver.get(self.home)
-                        ports = data.decode('ASCII').split(":")
-                        self.full_add = "tcp://" + str(ip_add) + ":" + ports[1]
-                        self.sock_sub.connect(self.full_add)
-
+                    if event is not None and event.type == "CREATED" and self.kill:
+                        self.kill = False
+                        print("Updated Broker!")
                 message = self.sock_sub.recv_string()
-                topic, info = message.split("||")
-                print("Topic: %s. Message: %s" % (topic, info))
+                topic, info, id= message.split("||")
+                msgs = info.split("...")
+                msgs = msgs[0:len(msgs) - 1]
+                if len(msgs) < self.history:
+                    info = "The publisher's history size is less than the requested history size, so no messages will be played."
+                else:
+                    msgs = msgs[len(msgs) - self.history:len(msgs)]
+                    info = ",".join(msgs)
+                print("Topic: %s. Message(s): %s" % (topic, info))
                 self.count = self.count + 1
 
 if __name__ == '__main__':
@@ -110,8 +81,11 @@ if __name__ == '__main__':
         # parse input
         topics = str(sys.argv[1])
         ip_add = sys.argv[2]
-        port = sys.argv[3] if len(sys.agrv) > 3 else ""
-        sub = Subscriber(ip_add, port)
+        history = 1
+        if len(sys.argv) > 3:
+            history = int(sys.argv[3])
+
+        sub = Subscriber(ip_add, -1, history)
         sub.register_sub(topics)
 
         try:
